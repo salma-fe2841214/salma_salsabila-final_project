@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: black;
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'pacifico', cursive;
+    letter-spacing: 3px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8em;
+    transition: .3s;
+}
+nav ul li a:hover {
+    color: brown;
+}
+
+nav h4 {
+    transition: .3s;
+}
+nav h4:hover {
+    color: brown;
+}
+
+.mobile-menu {
+    float: none;
+    display: none;
+}
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(129, 195, 204, 0.7);
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar ul li {
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover {
+    background-color: antiquewhite;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+}
+
+footer {
+    background-color: rgb(31, 27, 27);
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
